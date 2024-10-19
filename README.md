@@ -17,5 +17,5 @@
 ### ✯ Discord: t3nx1l  
 ### ☁ Meu Site: [CyberWareCursos](https://linkfly.to/CyberWareCursos)
 
-## COMPRESSED FILE PASSWORD
+## 📜 COMPRESSED FILE PASSWORD 📜
 ### PASSWORD: [.--. ..- ... .--. ..- .-.. .-] <"PUSPULA" IN MORSE>
