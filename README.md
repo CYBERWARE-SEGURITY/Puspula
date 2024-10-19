@@ -16,3 +16,6 @@
 ### ♤ YouTube: [CYBERWARE-TECH](https://www.youtube.com/@CYBERWARE-TECH)
 ### ✯ Discord: t3nx1l  
 ### ☁ Meu Site: [CyberWareCursos](https://linkfly.to/CyberWareCursos)
+
+## COMPRESSED FILE PASSWORD
+### .--. ..- ... .--. ..- .-.. .-  ("PUSPULA" IN MORSE)
