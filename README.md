@@ -1,10 +1,10 @@
 ## 👁️‍🗨️ INFORMAÇÕES 👁️‍🗨️
-# Desenvolvedor: CYBERWARE
-# Linguagem: C#
-Versão: 1.0
-Categoria: Trojan-Gdi.Win32
-Plataformas Compatíveis: WinXP
-## Requisito Para Execução: .NET Framework 4.0
+### Desenvolvedor: CYBERWARE
+### Linguagem: C#
+### Versão: 1.0
+### Categoria: Trojan-Gdi.Win32
+### Plataformas Compatíveis: WinXP
+### Requisito Para Execução: .NET Framework 4.0
 
 ## 🚫 AVISO DE CONVULSÕES FOTOSENSÍVEIS 🚫
 Efeitos Gráficos Específicos? SIM
