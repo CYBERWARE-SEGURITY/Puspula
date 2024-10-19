@@ -1,6 +1,6 @@
 ## 👁️‍🗨️ INFORMAÇÕES 👁️‍🗨️
-Desenvolvedor: CYBERWARE
-Linguagem: C#
+# Desenvolvedor: CYBERWARE
+# Linguagem: C#
 Versão: 1.0
 Categoria: Trojan-Gdi.Win32
 Plataformas Compatíveis: WinXP
