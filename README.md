@@ -1,22 +1,18 @@
-## 👁️‍🗨️ INFORMAÇÕES 👁️‍🗨️
-### Desenvolvedor: CYBERWARE
-### Linguagem: C#
-### Versão: 1.0
-### Categoria: Trojan-Gdi.Win32
-### Plataformas Compatíveis: WinXP
-### Requisito Para Execução: .NET Framework 4.0
-
-## 🚫 AVISO DE CONVULSÕES FOTOSENSÍVEIS 🚫
-### Efeitos Gráficos Específicos? SIM
-### Áudio Alto ou Intenso? SIM
-
-## ☣⚠  -ATENÇÃO-  ⚠☣
-### Eu, CYBERWARE, não me responsabilizo por quaisquer danos ou perdas resultantes do uso.
-
-## ⤵ RECOMENDAÇÃO ⤵
-### Para testes e estudos, recomendo fortemente o uso de máquinas virtuais, como VMware ou VirtualBox.
-
-## ❇ REDES ❇
-### ♤ YouTube: [CYBERWARE-TECH](https://www.youtube.com/@CYBERWARE-TECH)
-### ✯ Discord: t3nx1l  
-### ☁ Meu Site: [CyberWareCursos](https://linkfly.to/CyberWareCursos)
+## 👁️‍🗨️ INFORMATION 👁️‍🗨️
+### Developer: CYBERWARE
+### Language: C#
+### Version: 1.0
+### Category: Trojan-Gdi.Win32
+### Compatible Platforms: WinXP
+### Execution Requirement: .NET Framework 4.0
+## 🚫 PHOTOSENSITIVE SEIZURE WARNING 🚫
+### Specific Graphic Effects? YES
+### Loud or Intense Audio? YES
+## ☣⚠ -WARNING- ⚠☣
+### I, CYBERWARE, am not responsible for any damages or losses resulting from the use.
+## ⤵ RECOMMENDATION ⤵
+### For testing and study purposes, I strongly recommend using virtual machines like VMware or VirtualBox.
+## ❇ SOCIALS ❇
+### ♤ YouTube: CYBERWARE-TECH
+### ✯ Discord: t3nx1l
+### ☁ My Website: CyberWareCursos
