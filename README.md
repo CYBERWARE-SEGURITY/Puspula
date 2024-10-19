@@ -13,6 +13,6 @@
 ## ⤵ RECOMMENDATION ⤵
 ### For testing and study purposes, I strongly recommend using virtual machines like VMware or VirtualBox.
 ## ❇ SOCIALS ❇
-### ♤ YouTube: CYBERWARE-TECH
-### ✯ Discord: t3nx1l
-### ☁ My Website: CyberWareCursos
+### ♤ YouTube: [CYBERWARE-TECH](https://www.youtube.com/@CYBERWARE-TECH)
+### ✯ Discord: t3nx1l  
+### ☁ Meu Site: [CyberWareCursos](https://linkfly.to/CyberWareCursos)
