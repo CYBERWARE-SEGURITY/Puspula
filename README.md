@@ -6,6 +6,7 @@
 ### Plataformas Compatíveis: WinXP
 ## Requisito Para Execução: .NET Framework 4.0
 
+
 🚫 AVISO DE CONVULSÕES FOTOSENSÍVEIS 🚫
 ### Efeitos Gráficos Específicos? SIM
 ## Áudio Alto ou Intenso? SIM
