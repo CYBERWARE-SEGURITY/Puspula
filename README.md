@@ -3,9 +3,8 @@
 ### Linguagem: C#
 ### Versão: 1.0
 ### Categoria: Trojan-Gdi.Win32
-### Plataformas Compatíveis: WinXP, WinVista, Win7, Win8.1, Win10, Win11 
-### Requisito Para Execução: .NET Framework 4.0
-## Destrutivo?- Sim
+### Plataformas Compatíveis: WinXP
+## Requisito Para Execução: .NET Framework 4.0
 
 🚫 AVISO DE CONVULSÕES FOTOSENSÍVEIS 🚫
 ### Efeitos Gráficos Específicos? SIM
