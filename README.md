@@ -2,7 +2,7 @@
 ### Developer: CYBERWARE
 ### Language: C#
 ### Version: 1.0
-### Category: Trojan-Gdi.Win32
+### Category: TrojanGdi.Win32
 ### Compatible Platforms: WinXP
 ### Execution Requirement: .NET Framework 4.0
 ## 🚫 PHOTOSENSITIVE SEIZURE WARNING 🚫
