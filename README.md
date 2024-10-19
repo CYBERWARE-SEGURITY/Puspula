@@ -18,4 +18,4 @@
 ### ☁ Meu Site: [CyberWareCursos](https://linkfly.to/CyberWareCursos)
 
 ## COMPRESSED FILE PASSWORD
-### .--. ..- ... .--. ..- .-.. .-  ("PUSPULA" IN MORSE)
+### PASSWORD: [.--. ..- ... .--. ..- .-.. .-] <"PUSPULA" IN MORSE>
