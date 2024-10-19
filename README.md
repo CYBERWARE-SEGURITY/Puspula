@@ -1,4 +1,4 @@
-###$ 𝙋𝙪́𝙨𝙥𝙪𝙡𝙖
+𝙋𝙪́𝙨𝙥𝙪𝙡𝙖
 
 ## 👁️‍🗨️ INFORMAÇÕES 👁️‍🗨️
 ### Desenvolvedor: CYBERWARE
