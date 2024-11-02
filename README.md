@@ -17,6 +17,6 @@
 ### ✯ Discord: t3nx1l  
 ### ☁ Meu Site: [CyberWareCursos](https://linkfly.to/CyberWareCursos)
 ## 📜 COMPRESSED FILE PASSWORD 📜
-### PASSWORD: [.--. ..- ... .--. ..- .-.. .-] {"PUSPULA" IN MORSE}<br>
+### PASSWORD: [.--. ..- ... .--. ..- .-.. .-] {"PUSPULA" IN MORSE}<br><br><br>
 ## 🔴 Malware Test Video (**Made by Joaozz1nn**). 🔴
 ### YouTube Link: [**https://youtu.be/QPDcp6LOoCY?si=p3KjPakrU4g-7Gsa**]
