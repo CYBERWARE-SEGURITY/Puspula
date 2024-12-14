@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 using System.Threading;
-using static Windows.WinApi;
+using static Vanara.PInvoke.WinMm;
 
 namespace Puspula
 {
@@ -9,9 +9,10 @@ namespace Puspula
     {
         public static void Bytebeat1()
         {
-            IntPtr hWaveOut = IntPtr.Zero;
+            SafeHWAVEOUT hWaveOut;
 
-            wfx.wFormatTag = WAVE_FORMAT_PCM;
+            WAVEFORMATEX wfx = new WAVEFORMATEX();
+            wfx.wFormatTag = WAVE_FORMAT.WAVE_FORMAT_PCM;
             wfx.nChannels = 1;
             wfx.nSamplesPerSec = 8000;
             wfx.nAvgBytesPerSec = 8000;
@@ -19,7 +20,7 @@ namespace Puspula
             wfx.wBitsPerSample = 8;
             wfx.cbSize = 0;
 
-            waveOutOpen(out hWaveOut, WAVE_MAPPER, ref wfx, IntPtr.Zero, IntPtr.Zero, CALLBACK_NULL);
+            waveOutOpen(out hWaveOut, 0xFFFFFFFF, in wfx, IntPtr.Zero, IntPtr.Zero, WAVE_OPEN.CALLBACK_NULL);
 
             byte[] sbuffer = new byte[16000 * 60];
 
@@ -32,6 +33,7 @@ namespace Puspula
 
             try
             {
+                WAVEHDR header = new WAVEHDR();
                 header.lpData = handle.AddrOfPinnedObject();
                 header.dwBufferLength = (uint)sbuffer.Length;
                 header.dwFlags = 0;
@@ -68,9 +70,10 @@ namespace Puspula
 
         public static void Bytebeat3()
         {
-            IntPtr hWaveOut = IntPtr.Zero;
+            SafeHWAVEOUT hWaveOut;
 
-            wfx.wFormatTag = WAVE_FORMAT_PCM;
+            WAVEFORMATEX wfx = new WAVEFORMATEX();
+            wfx.wFormatTag = WAVE_FORMAT.WAVE_FORMAT_PCM;
             wfx.nChannels = 1;
             wfx.nSamplesPerSec = 8000;
             wfx.nAvgBytesPerSec = 8000;
@@ -78,7 +81,7 @@ namespace Puspula
             wfx.wBitsPerSample = 8;
             wfx.cbSize = 0;
 
-            waveOutOpen(out hWaveOut, WAVE_MAPPER, ref wfx, IntPtr.Zero, IntPtr.Zero, CALLBACK_NULL);
+            waveOutOpen(out hWaveOut, 0xFFFFFFFF, in wfx, IntPtr.Zero, IntPtr.Zero, WAVE_OPEN.CALLBACK_NULL);
 
             byte[] sbuffer = new byte[16000 * 60];
 
@@ -91,6 +94,7 @@ namespace Puspula
 
             try
             {
+                WAVEHDR header = new WAVEHDR();
                 header.lpData = handle.AddrOfPinnedObject();
                 header.dwBufferLength = (uint)sbuffer.Length;
                 header.dwFlags = 0;
@@ -117,9 +121,10 @@ namespace Puspula
 
         public static void Bytebeat4()
         {
-            IntPtr hWaveOut = IntPtr.Zero;
+            SafeHWAVEOUT hWaveOut;
 
-            wfx.wFormatTag = WAVE_FORMAT_PCM;
+            WAVEFORMATEX wfx = new WAVEFORMATEX();
+            wfx.wFormatTag = WAVE_FORMAT.WAVE_FORMAT_PCM;
             wfx.nChannels = 1;
             wfx.nSamplesPerSec = 8000;
             wfx.nAvgBytesPerSec = 8000;
@@ -127,7 +132,7 @@ namespace Puspula
             wfx.wBitsPerSample = 8;
             wfx.cbSize = 0;
 
-            waveOutOpen(out hWaveOut, WAVE_MAPPER, ref wfx, IntPtr.Zero, IntPtr.Zero, CALLBACK_NULL);
+            waveOutOpen(out hWaveOut, 0xFFFFFFFF, in wfx, IntPtr.Zero, IntPtr.Zero, WAVE_OPEN.CALLBACK_NULL);
 
             byte[] sbuffer = new byte[16000 * 60];
 
@@ -140,6 +145,7 @@ namespace Puspula
 
             try
             {
+                WAVEHDR header = new WAVEHDR();
                 header.lpData = handle.AddrOfPinnedObject();
                 header.dwBufferLength = (uint)sbuffer.Length;
                 header.dwFlags = 0;
@@ -167,9 +173,10 @@ namespace Puspula
 
         public static void Bytebeat5()
         {
-            IntPtr hWaveOut = IntPtr.Zero;
+            SafeHWAVEOUT hWaveOut;
 
-            wfx.wFormatTag = WAVE_FORMAT_PCM;
+            WAVEFORMATEX wfx = new WAVEFORMATEX();
+            wfx.wFormatTag = WAVE_FORMAT.WAVE_FORMAT_PCM;
             wfx.nChannels = 1;
             wfx.nSamplesPerSec = 8000;
             wfx.nAvgBytesPerSec = 8000;
@@ -177,7 +184,7 @@ namespace Puspula
             wfx.wBitsPerSample = 8;
             wfx.cbSize = 0;
 
-            waveOutOpen(out hWaveOut, WAVE_MAPPER, ref wfx, IntPtr.Zero, IntPtr.Zero, CALLBACK_NULL);
+            waveOutOpen(out hWaveOut, 0xFFFFFFFF, in wfx, IntPtr.Zero, IntPtr.Zero, WAVE_OPEN.CALLBACK_NULL);
 
             byte[] sbuffer = new byte[16000 * 60];
 
@@ -190,6 +197,7 @@ namespace Puspula
 
             try
             {
+                WAVEHDR header = new WAVEHDR();
                 header.lpData = handle.AddrOfPinnedObject();
                 header.dwBufferLength = (uint)sbuffer.Length;
                 header.dwFlags = 0;
@@ -216,9 +224,10 @@ namespace Puspula
 
         public static void Bytebeat6()
         {
-            IntPtr hWaveOut = IntPtr.Zero;
+            SafeHWAVEOUT hWaveOut;
 
-            wfx.wFormatTag = WAVE_FORMAT_PCM;
+            WAVEFORMATEX wfx = new WAVEFORMATEX();
+            wfx.wFormatTag = WAVE_FORMAT.WAVE_FORMAT_PCM;
             wfx.nChannels = 1;
             wfx.nSamplesPerSec = 8000;
             wfx.nAvgBytesPerSec = 8000;
@@ -226,7 +235,7 @@ namespace Puspula
             wfx.wBitsPerSample = 8;
             wfx.cbSize = 0;
 
-            waveOutOpen(out hWaveOut, WAVE_MAPPER, ref wfx, IntPtr.Zero, IntPtr.Zero, CALLBACK_NULL);
+            waveOutOpen(out hWaveOut, 0xFFFFFFFF, in wfx, IntPtr.Zero, IntPtr.Zero, WAVE_OPEN.CALLBACK_NULL);
 
             byte[] sbuffer = new byte[16000 * 60];
 
@@ -239,6 +248,7 @@ namespace Puspula
 
             try
             {
+                WAVEHDR header = new WAVEHDR();
                 header.lpData = handle.AddrOfPinnedObject();
                 header.dwBufferLength = (uint)sbuffer.Length;
                 header.dwFlags = 0;
@@ -265,9 +275,10 @@ namespace Puspula
 
         public static void Bytebeat7()
         {
-            IntPtr hWaveOut = IntPtr.Zero;
+            SafeHWAVEOUT hWaveOut;
 
-            wfx.wFormatTag = WAVE_FORMAT_PCM;
+            WAVEFORMATEX wfx = new WAVEFORMATEX();
+            wfx.wFormatTag = WAVE_FORMAT.WAVE_FORMAT_PCM;
             wfx.nChannels = 1;
             wfx.nSamplesPerSec = 8000;
             wfx.nAvgBytesPerSec = 8000;
@@ -275,7 +286,7 @@ namespace Puspula
             wfx.wBitsPerSample = 8;
             wfx.cbSize = 0;
 
-            waveOutOpen(out hWaveOut, WAVE_MAPPER, ref wfx, IntPtr.Zero, IntPtr.Zero, CALLBACK_NULL);
+            waveOutOpen(out hWaveOut, 0xFFFFFFFF, in wfx, IntPtr.Zero, IntPtr.Zero, WAVE_OPEN.CALLBACK_NULL);
 
             byte[] sbuffer = new byte[16000 * 60];
 
@@ -288,6 +299,7 @@ namespace Puspula
 
             try
             {
+                WAVEHDR header = new WAVEHDR();
                 header.lpData = handle.AddrOfPinnedObject();
                 header.dwBufferLength = (uint)sbuffer.Length;
                 header.dwFlags = 0;
@@ -314,30 +326,32 @@ namespace Puspula
 
         public static void Bytebeat8()
         {
-            IntPtr hWaveOut = IntPtr.Zero;
+            SafeHWAVEOUT hWaveOut;
 
-            wfx.wFormatTag = WAVE_FORMAT_PCM;
+            WAVEFORMATEX wfx = new WAVEFORMATEX();
+            wfx.wFormatTag = WAVE_FORMAT.WAVE_FORMAT_PCM;
             wfx.nChannels = 1;
-            wfx.nSamplesPerSec = 8000;
-            wfx.nAvgBytesPerSec = 8000;
+            wfx.nSamplesPerSec = 6700;
+            wfx.nAvgBytesPerSec = 6700;
             wfx.nBlockAlign = 1;
             wfx.wBitsPerSample = 8;
             wfx.cbSize = 0;
 
-            waveOutOpen(out hWaveOut, WAVE_MAPPER, ref wfx, IntPtr.Zero, IntPtr.Zero, CALLBACK_NULL);
+            waveOutOpen(out hWaveOut, 0xFFFFFFFF, in wfx, IntPtr.Zero, IntPtr.Zero, WAVE_OPEN.CALLBACK_NULL);
 
             byte[] sbuffer = new byte[16000 * 60];
 
             for (uint t = 0; t < sbuffer.Length; t++)
             {
-                sbuffer[t] = (byte)(t | t % 32 | t % 122);
-
+                int shift1 = (int)(t >> 2);
+                sbuffer[t] = (byte)(t | Math.Sign(shift1) | t % 21 * t * (t << 2 * shift1) >> (int)t);
             }
 
             GCHandle handle = GCHandle.Alloc(sbuffer, GCHandleType.Pinned);
 
             try
             {
+                WAVEHDR header = new WAVEHDR();
                 header.lpData = handle.AddrOfPinnedObject();
                 header.dwBufferLength = (uint)sbuffer.Length;
                 header.dwFlags = 0;
@@ -365,9 +379,10 @@ namespace Puspula
 
         public static void Bytebeat9()
         {
-            IntPtr hWaveOut = IntPtr.Zero;
+            SafeHWAVEOUT hWaveOut;
 
-            wfx.wFormatTag = WAVE_FORMAT_PCM;
+            WAVEFORMATEX wfx = new WAVEFORMATEX();
+            wfx.wFormatTag = WAVE_FORMAT.WAVE_FORMAT_PCM;
             wfx.nChannels = 1;
             wfx.nSamplesPerSec = 8000;
             wfx.nAvgBytesPerSec = 8000;
@@ -375,20 +390,21 @@ namespace Puspula
             wfx.wBitsPerSample = 8;
             wfx.cbSize = 0;
 
-            waveOutOpen(out hWaveOut, WAVE_MAPPER, ref wfx, IntPtr.Zero, IntPtr.Zero, CALLBACK_NULL);
+            waveOutOpen(out hWaveOut, 0xFFFFFFFF, in wfx, IntPtr.Zero, IntPtr.Zero, WAVE_OPEN.CALLBACK_NULL);
 
             byte[] sbuffer = new byte[16000 * 60];
-                
+
             for (uint t = 0; t < sbuffer.Length; t++)
             {
-                sbuffer[t] = (byte)(t * t << 4 | t + (t >> 2) | t >> 4);       
-                
+                sbuffer[t] = (byte)(t * t << 42 | t + Math.Sign(t >> 30) | t >> 422);
+
             }
-                    
+
             GCHandle handle = GCHandle.Alloc(sbuffer, GCHandleType.Pinned);
 
             try
             {
+                WAVEHDR header = new WAVEHDR();
                 header.lpData = handle.AddrOfPinnedObject();
                 header.dwBufferLength = (uint)sbuffer.Length;
                 header.dwFlags = 0;
@@ -414,8 +430,5 @@ namespace Puspula
         }
 
 
-
-
     }
 }
-
