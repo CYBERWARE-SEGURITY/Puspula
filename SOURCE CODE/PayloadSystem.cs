@@ -1,8 +1,13 @@
-﻿using System;
-using static Windows.WinApi;
+using System;
+using static Vanara.PInvoke.User32;
+using static Vanara.PInvoke.Gdi32;
+using static Vanara.PInvoke.Kernel32;
 using System.Threading;
 using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace Puspula
 {
@@ -10,39 +15,45 @@ namespace Puspula
     {
         public static void MoveMouse()
         {
-
-            int shakeAmount = 10;
+            var random = new Random();
+            Point lastCursorPos;
+            GetCursorPos(out lastCursorPos);
 
             while (true)
             {
-                POINT currentPos;
-                GetCursorPos(out currentPos);
+                Point currentCursorPos;
+                GetCursorPos(out currentCursorPos);
 
-                Random rand = new Random();
-                int offsetX = rand.Next(-shakeAmount, shakeAmount);
-                int offsetY = rand.Next(-shakeAmount, shakeAmount);
+                if (currentCursorPos.X != lastCursorPos.X || currentCursorPos.Y != lastCursorPos.Y)
+                {
+                    lastCursorPos = currentCursorPos;
+                }
 
-                SetCursorPos(currentPos.X + offsetX, currentPos.Y + offsetY);
+                int offsetX = random.Next(-3, 4);
+                int offsetY = random.Next(-3, 4);
 
-                Thread.Sleep(1);
+                SetCursorPos(lastCursorPos.X + offsetX, lastCursorPos.Y + offsetY);
+
+                Sleep(10);
             }
+            Thread.Sleep(1);
         }
 
         public static void PressKey(byte key, byte key2, byte key3)
         {
-            while(true)
+            while (true)
             {
-                keybd_event(key, 0, 0, UIntPtr.Zero);
+                keybd_event(key, 0, 0, IntPtr.Zero);
 
-                keybd_event(key2, 0, 0, UIntPtr.Zero);
+                keybd_event(key2, 0, 0, IntPtr.Zero);
 
-                keybd_event(key, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
+                keybd_event(key, 0, KEYEVENTF.KEYEVENTF_KEYUP, IntPtr.Zero);
 
-                keybd_event(key2, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
+                keybd_event(key2, 0, KEYEVENTF.KEYEVENTF_KEYUP, IntPtr.Zero);
 
                 Thread.Sleep(1000 * 5);
-                keybd_event(key3, 0, 0, UIntPtr.Zero);
-                keybd_event(key3, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
+                keybd_event(key3, 0, 0, IntPtr.Zero);
+                keybd_event(key3, 0, KEYEVENTF.KEYEVENTF_KEYUP, IntPtr.Zero);
             }
         }
 
@@ -50,23 +61,18 @@ namespace Puspula
         {
             while (true)
             {
-                keybd_event(key, 0, 0, UIntPtr.Zero);
+                keybd_event(key, 0, 0, IntPtr.Zero);
 
-                keybd_event(key2, 0, 0, UIntPtr.Zero);
+                keybd_event(key2, 0, 0, IntPtr.Zero);
 
-                keybd_event(key, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
+                keybd_event(key, 0, KEYEVENTF.KEYEVENTF_KEYUP, IntPtr.Zero);
 
-                keybd_event(key2, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
+                keybd_event(key2, 0, KEYEVENTF.KEYEVENTF_KEYUP, IntPtr.Zero);
 
                 Thread.Sleep(500);
-                keybd_event(key3, 0, 0, UIntPtr.Zero);
-                keybd_event(key3, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
+                keybd_event(key3, 0, 0, IntPtr.Zero);
+                keybd_event(key3, 0, KEYEVENTF.KEYEVENTF_KEYUP, IntPtr.Zero);
             }
         }
-
-
-
-
-
     }
 }
