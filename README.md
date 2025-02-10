@@ -16,7 +16,7 @@
 ### For testing and study purposes, I strongly recommend using virtual machines like VMware or VirtualBox.<br><br>
 ## ❇ SOCIALS ❇
 ### ♤ YouTube: [CYBERWARE-TECH](https://www.youtube.com/@CYBERWARE-TECH)
-### ✯ Discord: t3nx1l <br><br>
+### ✯ Discord: t3nx1l
 ### ☁ Meu Site:  [CYBERWARE PROFILE] (https://linkfly.to/CYBERWARE)
 ## 🔴 Malware Test Video (**Made by Joaozz1nn**). 🔴
 ### YouTube Link: [**https://youtu.be/QPDcp6LOoCY?si=p3KjPakrU4g-7Gsa**]
